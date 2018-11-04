@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    body{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        // background-color: greenyellow;
+        // background-size: cover;
+        background-size: 120% 120%;
+        background-repeat: repeat;
+        .header{
+            width: 100%;
+            margin-top: 60px;
+            text-align: center;
+            .img_box{
+                margin: 0 auto;
+                width: 3.2rem;
+                height: 3.2rem;
+                text-align: center;
+                img{
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+            .song_info{
+                margin-top: 40px;
+                width: 100%;
+                height: 100%;
+                .song_name{
+                    font-size: 24px;
+                    margin-bottom: 8px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #fff;
+                    opacity: 0.86;
+                }
+                h5{
+                    font-size: 12px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #fff;
+                    opacity: 0.6;
+                    margin-top: 6px;
+                }
+            }
+        }
+        .proc_wrap{
+            width: 6.4rem;
+            margin-top: 1rem;
+            display: flex;
+            .cur_time{
+                width: 1.2rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                text-align: center;
+                color: #fff;
+                font-size: 12px;
+            }
+            .proc_box{
+                width: 4rem;
+                height: 0.8rem;
+                position: relative;
+                overflow: hidden;
+                div{
+                    position: absolute;
+                    width: 4rem;
+                    height: 1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .proc_bottom{
+                    background-color: #fff;
+                }
+                .proc_top{
+                    width: 96%;
+                    transform: translateY(-50%) translateX(-100%);
+                    background-color: green;
+                    div{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 4px;
+                        background-color: blue;
+                        position: absolute;
+                        right: -8px;
+                        top: 0px;
+                    }
+                }
+            }
+            .dura{
+                width: 1.2rem;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                text-align: center;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        .footer{
+            position: fixed;
+            width: 100%;
+            height: 1.2rem;
+            bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            div{
+                flex: 1;
+                height: 100%;
+                background-position: center;
+                background-size: 0.4rem;
+                color: #fff;
+                background-repeat: no-repeat;
+            }
+            .faverite{
+                background-image: url(../images/icon-like.png);
+            }
+            .previouce{
+                background-image: url(../images/icon-prev.png);
+            }
+            .play{
+                background-image: url(../images/icon-play.png);
+            }
+            .next{
+                background-image: url(../images/icon-next.png);
+            }
+            .list{
+                background-image: url(../images/icon-list.png);
+            }
+        }
+        .list_wrap{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+            ul{
+                width: 100%;
+                background-color: rgb(24, 87, 224);
+                .song{
+                    width: 100%;
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    text-align: center;
+                    background-color: rgb(24, 87, 224);
+                    border-bottom: 0.5px solid #999;
+                }
+            }
+            .close_box{
+                width: 100%;
+                height: 30px;
+                margin: 0 auto;
+                line-height: 22px;
+                background-color: rgb(74, 143, 207,1);
+                text-align: center;
+                font-size: 0;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 30px;
+                    border-radius: 4px;
+                    color: #fff;
+                    background-color: #aaa;
+
+                }
+            }
+        }
+    }
+}

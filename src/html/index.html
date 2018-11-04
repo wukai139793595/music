@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>music</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+        (function (doc, win) {
+            var eventType = 'onorientationevent' in win ? 'onorientationevent' : 'resize';
+            var oHtml = document.documentElement;
+            function func(e) {
+                e = e || window.event;
+                var width = oHtml.clientWidth;
+                width = width > 640 ? 640 : width;
+                width = width < 320 ? 320 : width;
+                width && (oHtml.style.fontSize = width * 100 / 640 + 'px');
+            }
+            win.addEventListener(eventType, func, false);
+            doc.addEventListener('DOMContentLoaded', func, false);
+        })(document, window)
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="img_box">
+            <img class="song_img" src="../../source/song_1.jpg" alt="">
+        </div>
+        <div class="song_info">
+            <h1 class="song_name">丑八怪</h1>
+            <h5 class="author">薛之谦</h5>
+            <h5 class="album">意外</h5>
+        </div>
+    </div>
+    <div class="proc_wrap">
+        <div class="cur_time">00:00</div>
+        <div class="proc_box">
+            <div class="proc_bottom"></div>
+            <div class="proc_top">
+                <div class="point"></div>
+            </div>
+        </div>
+        <div class="dura">04:13</div>
+    </div>
+    <div class="footer">
+        <div class="faverite">
+        </div>
+        <div class="previouce">
+        </div>
+        <div class="play">
+        </div>
+        <div class="next">
+        </div>
+        <div class="list">
+        </div>
+    </div>
+    <div class="list_wrap">
+        <ul class="list_box">
+            <!-- <li></li> -->
+        </ul>
+        <div class="close_box">
+            <img class='close_img'  src="../images/icon-close.png" alt="">
+        </div>
+    </div>
+    <script src="../js/zepto.min.js"></script>
+    <script src="../js/gaussBlur.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
